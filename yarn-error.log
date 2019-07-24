@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.10.1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/max.xu/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/usr/local/go/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  11.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@expo%2fsamples: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:120826:19)
+      at listOnTimeout (timers.js:324:15)
+      at processTimers (timers.js:268:5)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject",
+      "test": "jest --watchAll"
+    },
+    "jest": {
+      "preset": "jest-expo"
+    },
+    "dependencies": {
+      "@expo/samples": "~3.0.0",
+      "@expo/vector-icons": "^10.0.1",
+      "@react-navigation/web": "^1.0.0-alpha.9",
+      "expo": "^33.0.0",
+      "expo-asset": "^5.0.0",
+      "expo-constants": "^5.0.0",
+      "expo-font": "^5.0.0",
+      "expo-web-browser": "^5.0.0",
+      "react": "16.8.3",
+      "react-dom": "^16.8.6",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+      "react-native-web": "^0.11.4",
+      "react-navigation": "^3.11.0"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "^5.1.0",
+      "jest-expo": "^33.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

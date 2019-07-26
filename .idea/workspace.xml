@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbca09dd-656a-4818-81ee-a5be52a7e390" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/decks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/decks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,28 +18,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/decks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
-                <element signature="e#15#34#0" expanded="true" />
-                <element signature="e#33#64#0" expanded="true" />
-                <element signature="e#71#85#0" expanded="true" />
-                <element signature="e#79#135#0" expanded="true" />
-                <element signature="e#173#241#0" expanded="true" />
-                <element signature="e#476#494#0" expanded="true" />
-                <element signature="e#580#598#0" expanded="true" />
-                <element signature="e#699#735#0" expanded="true" />
-                <element signature="e#768#822#0" expanded="true" />
+                <element signature="e#118#381#0" expanded="true" />
+                <element signature="e#156#377#0" expanded="true" />
+                <element signature="e#164#250#0" expanded="true" />
+                <element signature="e#258#371#0" expanded="true" />
+                <element signature="e#440#904#0" expanded="true" />
+                <element signature="e#504#557#0" expanded="true" />
+                <element signature="e#595#648#0" expanded="true" />
+                <element signature="e#733#864#0" expanded="true" />
+                <element signature="e#771#856#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.prettierrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -53,6 +70,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>prettier</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,12 +89,13 @@
         <option value="$PROJECT_DIR$/src/actions/decks.js" />
         <option value="$PROJECT_DIR$/src/reducers/decks.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.prettierrc" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="221" />
-    <option name="y" value="37" />
+    <option name="x" value="237" />
+    <option name="y" value="434" />
     <option name="width" value="1400" />
     <option name="height" value="962" />
   </component>
@@ -91,44 +114,6 @@
             <path>
               <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobile-flashcards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-flashcards" type="462c0819:PsiDirectoryNode" />
-              <item name="uitils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,15 +161,15 @@
       <updated>1563985831756</updated>
       <workItem from="1563985833495" duration="263000" />
       <workItem from="1564066704589" duration="3130000" />
-      <workItem from="1564152444671" duration="2248000" />
+      <workItem from="1564152444671" duration="2703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5641000" />
+    <option name="totallyTimeSpent" value="6096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="221" y="37" width="1400" height="962" extended-state="0" />
+    <frame x="237" y="434" width="1400" height="962" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496749" visible="true" weight="0.21857142" />
@@ -269,13 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/decks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -296,28 +274,42 @@
     <entry file="file://$PROJECT_DIR$/__tests__/__snapshots__/App-test.js.snap">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/decks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding>
-            <element signature="e#15#34#0" expanded="true" />
-            <element signature="e#33#64#0" expanded="true" />
-            <element signature="e#71#85#0" expanded="true" />
-            <element signature="e#79#135#0" expanded="true" />
-            <element signature="e#173#241#0" expanded="true" />
-            <element signature="e#476#494#0" expanded="true" />
-            <element signature="e#580#598#0" expanded="true" />
-            <element signature="e#699#735#0" expanded="true" />
-            <element signature="e#768#822#0" expanded="true" />
+            <element signature="e#118#381#0" expanded="true" />
+            <element signature="e#156#377#0" expanded="true" />
+            <element signature="e#164#250#0" expanded="true" />
+            <element signature="e#258#371#0" expanded="true" />
+            <element signature="e#440#904#0" expanded="true" />
+            <element signature="e#504#557#0" expanded="true" />
+            <element signature="e#595#648#0" expanded="true" />
+            <element signature="e#733#864#0" expanded="true" />
+            <element signature="e#771#856#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="406">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prettierrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -19,7 +19,7 @@ class AddCard extends Component {
     const { addCardToDeck } = this.props
     if (qs.length > 0 && ans.length > 0) {
       addCardToDeck(deckKey, this.state)
-      alertMsg(`A new card is added to ${decKey}`, () => Actions.pop())
+      alertMsg(`A new card is added to ${deckKey}`, () => Actions.pop())
     } else {
       alertMsg("Your question or answer cannot be empty.", () => false)
     }

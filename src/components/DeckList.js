@@ -1,4 +1,3 @@
-import { Text } from "expo"
 import React, { Component } from "react"
 import { FlatList } from "react-native-web"
 import TouchableOpacity from "react-native-web/dist/exports/TouchableOpacity"
@@ -6,6 +5,7 @@ import View from "react-native-web/dist/exports/View"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import * as DeckActions from "../actions/decks"
+import { Text } from "native-base"
 
 function Deck({ title, cardsNum }) {
   return (

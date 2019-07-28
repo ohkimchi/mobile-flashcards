@@ -1,6 +1,5 @@
-import { Button, View } from "native-base"
+import { Button, View, Text } from "native-base"
 import React, { Component } from "react"
-import { Text, View } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { alertMsg } from "../../uitils/helpers"

@@ -1,19 +1,18 @@
 import React, { Component } from "react"
-import { FlatList } from "react-native-web"
-import TouchableOpacity from "react-native-web/dist/exports/TouchableOpacity"
-import View from "react-native-web/dist/exports/View"
+import { FlatList, TouchableOpacity, View } from "react-native"
+import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
+import styled from "styled-components"
 import * as DeckActions from "../actions/decks"
-import { Text } from "native-base"
 
 function Deck({ title, cardsNum }) {
   return (
     <TouchableOpacity>
-      <View>
-        <Text>{title}</Text>
-        <Text>{cardsNum} Cards</Text>
-      </View>
+      <ViewContainer>
+        <TextContainer>{title}</TextContainer>
+        <TextContainer>{cardsNum} Cards</TextContainer>
+      </ViewContainer>
     </TouchableOpacity>
   )
 }
@@ -41,12 +40,12 @@ class DeckList extends Component {
     })
 
     return (
-      <div>
+      <View>
         <FlatList data={data} renderItem={this.renderItem} />
         <TouchableOpacity onPress={() => Actions.newDeck()}>
-          <Text>"+"</Text>
+          <TextButton>"+"</TextButton>
         </TouchableOpacity>
-      </div>
+      </View>
     )
   }
 }
@@ -63,3 +62,19 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(DeckList)
+
+const ViewContainer = styled.View`
+  height: 100px;
+  background-color: #81d8d0;
+  margin: 10px;
+`
+
+const TextContainer = styled.Text`
+  font-size: 20px;
+`
+
+const TextButton = styled.Text`
+  font-size: 20px;
+  background-color: #81d8d0;
+  margin: 10px;
+`

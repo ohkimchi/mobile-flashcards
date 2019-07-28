@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Routes from "./src/routes"
-import reducers from "./src/reducers/decks.js"
+import reducers from "./src/reducers"
 import middleware from "./src/middleware"
 import { createStore } from "redux"
 import { Provider } from "react-redux"

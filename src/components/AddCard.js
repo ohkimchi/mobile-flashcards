@@ -1,14 +1,14 @@
 import React, { Component } from "react"
-import { View, TouchableOpacity } from "react-native"
+import { TouchableOpacity, View } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import { alertMsg } from "../../uitils/helpers"
 import * as DecksActions from "../actions/decks"
 import {
+  specialStyles,
   TextContainer,
   TextInputArea,
-  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 class AddCard extends Component {

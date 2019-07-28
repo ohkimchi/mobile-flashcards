@@ -1,14 +1,14 @@
 import React, { Component } from "react"
-import { FlatList, View, TouchableOpacity } from "react-native"
+import { FlatList, TouchableOpacity, View } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import * as DeckActions from "../actions/decks"
 import {
+  specialStyles,
   TextContainer,
   ViewContainer,
   ViewFlatList,
-  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 function Deck({ deckKey, title, cardsNum }) {

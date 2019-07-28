@@ -1,13 +1,13 @@
 import { Switch } from "native-base"
 import React, { Component } from "react"
+import { TouchableOpacity, View } from "react-native"
 import { Actions } from "react-native-router-flux"
-import { View, TouchableOpacity } from "react-native"
 import { connect } from "react-redux"
 import {
+  specialStyles,
   SwitchContainer,
   TextContainer,
   ViewContainer,
-  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 class QuizView extends Component {

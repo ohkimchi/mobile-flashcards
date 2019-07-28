@@ -47,7 +47,7 @@ class DeckList extends Component {
       <View>
         <FlatList data={data} renderItem={this.renderItem} />
         <TouchableOpacity onPress={() => Actions.newDeck()}>
-          <TextButton>"+"</TextButton>
+          <TextButton>Create New Deck</TextButton>
         </TouchableOpacity>
       </View>
     )

@@ -1,8 +1,14 @@
 import { Switch } from "native-base"
 import React, { Component } from "react"
 import { Actions } from "react-native-router-flux"
-import { TouchableOpacity, Text, View } from "react-native"
+import { TouchableOpacity, View } from "react-native"
 import { connect } from "react-redux"
+import {
+  SwitchContainer,
+  TextButton,
+  TextContainer,
+  ViewContainer,
+} from "./sharedStyle/styledComponents"
 
 class QuizView extends Component {
   state = {
@@ -34,23 +40,21 @@ class QuizView extends Component {
       return (
         <View>
           <View>
-            <Text>Result:</Text>
-            <Text>
+            <TextContainer>Result:</TextContainer>
+            <TextContainer>
               {this.state.rightAns}/{totalQsNum} are correct.{" "}
-            </Text>
-            <Text>
+            </TextContainer>
+            <TextContainer>
               Score is {((this.state.rightAns / totalQsNum) * 100).toFixed(2)}%
-            </Text>
+            </TextContainer>
           </View>
           <View>
-            <TouchableOpacity
-              title="Restart the quiz"
-              onPress={() => this.restartQuiz()}
-            />
-            <TouchableOpacity
-              title="Back to deck"
-              onPress={() => Actions.pop()}
-            />
+            <TouchableOpacity onPress={() => this.restartQuiz()}>
+              <TextButton>Restart the quiz</TextButton>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.pop()}>
+              <TextButton>Back to deck</TextButton>
+            </TouchableOpacity>
           </View>
         </View>
       )
@@ -59,29 +63,28 @@ class QuizView extends Component {
     return (
       <View>
         <View>
-          <Text>
+          <TextContainer>
             {this.state.cardPos}/{totalQsNum}
-          </Text>
-          <View>
+          </TextContainer>
+          <ViewContainer>
             {!this.state.switchVal ? (
-              <Text>{currentQs.qs}</Text>
+              <TextContainer>{currentQs.qs}</TextContainer>
             ) : (
-              <Text>{currentQs.ans}</Text>
+              <TextContainer>{currentQs.ans}</TextContainer>
             )}
-          </View>
+          </ViewContainer>
         </View>
 
-        <View>
-          <Text>Show answer:</Text>
+        <SwitchContainer>
+          <TextContainer>Show answer:</TextContainer>
           <Switch
             onValueChange={this.toggleSwitch}
             value={this.state.switchVal}
           />
-        </View>
+        </SwitchContainer>
 
         <View>
           <TouchableOpacity
-            title="Correct"
             onPress={() =>
               this.setState({
                 cardPos: this.state.cardPos + 1,
@@ -89,9 +92,10 @@ class QuizView extends Component {
                 switchVal: false,
               })
             }
-          />{" "}
+          >
+            <TextButton>Correct</TextButton>
+          </TouchableOpacity>
           <TouchableOpacity
-            title="Incorrect"
             onPress={() =>
               this.setState({
                 cardPos: this.state.cardPos + 1,
@@ -99,7 +103,9 @@ class QuizView extends Component {
                 switchVal: false,
               })
             }
-          />
+          >
+            <TextButton>Incorrect</TextButton>
+          </TouchableOpacity>
         </View>
       </View>
     )

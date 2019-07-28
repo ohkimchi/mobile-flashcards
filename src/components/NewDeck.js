@@ -4,7 +4,7 @@ import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import { alertMsg } from "../../uitils/helpers"
-import * as DeckActions from "../actions/decks"
+import * as DecksActions from "../actions/decks"
 import {
   TextButton,
   TextContainer,
@@ -20,10 +20,10 @@ class NewDeck extends Component {
     const { title } = this.state
     const { addNewDeck } = this.props
     if (title.length < 1) {
-      alertMsg("Your deck title cannot be empty", () => false)
+      alertMsg("Oh no...", "Your deck title cannot be empty", () => false)
     } else {
       addNewDeck(title)
-      alertMsg("A new deck is added", () =>
+      alertMsg("Success!", "A new deck is added", () =>
         Actions.deckView({ deckKey: title })
       )
     }
@@ -49,7 +49,7 @@ class NewDeck extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(DeckActions, dispatch)
+  return bindActionCreators(DecksActions, dispatch)
 }
 
 export default connect(mapDispatchToProps)(NewDeck)

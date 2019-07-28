@@ -10,9 +10,9 @@ import {
   ViewContainer,
 } from "./sharedStyle/styledComponents"
 
-function Deck({ title, cardsNum }) {
+function Deck({ deckKey, title, cardsNum }) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => Actions.deckView({ deckKey })}>
       <ViewContainer>
         <TextContainer>{title}</TextContainer>
         <TextContainer>{cardsNum} Cards</TextContainer>

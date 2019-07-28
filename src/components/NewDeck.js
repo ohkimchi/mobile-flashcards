@@ -5,6 +5,11 @@ import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import { alertMsg } from "../../uitils/helpers"
 import * as DeckActions from "../actions/decks"
+import {
+  TextButton,
+  TextContainer,
+  TextInputArea,
+} from "./sharedStyle/styledComponents"
 
 class NewDeck extends Component {
   state = {
@@ -26,15 +31,15 @@ class NewDeck extends Component {
   render() {
     return (
       <View>
-        <Text>What is the title of your new deck?</Text>
+        <TextContainer>What is the title of your new deck?</TextContainer>
         <View>
-          <TextInput
+          <TextInputArea
             placeholder="New Deck Title"
             value={this.state.title}
             onChangeText={title => this.setState({ title })}
           />
           <TouchableOpacity onPress={this.onSubmit}>
-            <Text>Save Deck</Text>
+            <TextButton>Save Deck</TextButton>
           </TouchableOpacity>
         </View>
       </View>

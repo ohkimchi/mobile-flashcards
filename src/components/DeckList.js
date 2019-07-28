@@ -1,13 +1,14 @@
 import React, { Component } from "react"
-import { FlatList, TouchableOpacity, View } from "react-native"
+import { FlatList, View, TouchableOpacity } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import * as DeckActions from "../actions/decks"
 import {
-  TextButton,
   TextContainer,
   ViewContainer,
+  ViewFlatList,
+  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 function Deck({ deckKey, title, cardsNum }) {
@@ -45,9 +46,18 @@ class DeckList extends Component {
 
     return (
       <View>
-        <FlatList data={data} renderItem={this.renderItem} />
-        <TouchableOpacity onPress={() => Actions.newDeck()}>
-          <TextButton>Create New Deck</TextButton>
+        <ViewFlatList>
+          <FlatList
+            data={data}
+            renderItem={this.renderItem}
+            showsVerticalScrollIndicator={true}
+          />
+        </ViewFlatList>
+        <TouchableOpacity
+          onPress={() => Actions.newDeck()}
+          style={specialStyles.button}
+        >
+          <TextContainer>Create New Deck</TextContainer>
         </TouchableOpacity>
       </View>
     )

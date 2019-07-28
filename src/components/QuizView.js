@@ -1,13 +1,13 @@
 import { Switch } from "native-base"
 import React, { Component } from "react"
 import { Actions } from "react-native-router-flux"
-import { TouchableOpacity, View } from "react-native"
+import { View, TouchableOpacity } from "react-native"
 import { connect } from "react-redux"
 import {
   SwitchContainer,
-  TextButton,
   TextContainer,
   ViewContainer,
+  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 class QuizView extends Component {
@@ -49,11 +49,17 @@ class QuizView extends Component {
             </TextContainer>
           </View>
           <View>
-            <TouchableOpacity onPress={() => this.restartQuiz()}>
-              <TextButton>Restart the quiz</TextButton>
+            <TouchableOpacity
+              onPress={() => this.restartQuiz()}
+              style={specialStyles.button}
+            >
+              <TextContainer>Restart the quiz</TextContainer>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => Actions.pop()}>
-              <TextButton>Back to deck</TextButton>
+            <TouchableOpacity
+              onPress={() => Actions.pop()}
+              style={specialStyles.button}
+            >
+              <TextContainer>Back to deck</TextContainer>
             </TouchableOpacity>
           </View>
         </View>
@@ -93,7 +99,7 @@ class QuizView extends Component {
               })
             }
           >
-            <TextButton>Correct</TextButton>
+            <TextContainer>Correct</TextContainer>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
@@ -104,7 +110,7 @@ class QuizView extends Component {
               })
             }
           >
-            <TextButton>Incorrect</TextButton>
+            <TextContainer>Incorrect</TextContainer>
           </TouchableOpacity>
         </View>
       </View>

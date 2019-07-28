@@ -1,14 +1,14 @@
 import React, { Component } from "react"
-import { TouchableOpacity, View } from "react-native"
+import { View, TouchableOpacity } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import { alertMsg } from "../../uitils/helpers"
 import * as DecksActions from "../actions/decks"
 import {
-  TextButton,
   TextContainer,
   TextInputArea,
+  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 class NewDeck extends Component {
@@ -39,8 +39,11 @@ class NewDeck extends Component {
             value={this.state.title}
             onChangeText={title => this.setState({ title })}
           />
-          <TouchableOpacity onPress={() => this.onSubmit()}>
-            <TextButton>Save Deck</TextButton>
+          <TouchableOpacity
+            onPress={() => this.onSubmit()}
+            style={specialStyles.button}
+          >
+            <TextContainer>Save Deck</TextContainer>
           </TouchableOpacity>
         </View>
       </View>

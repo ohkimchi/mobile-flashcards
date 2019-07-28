@@ -1,9 +1,14 @@
+import { StyleSheet } from "react-native"
 import styled from "styled-components"
 
 export const ViewContainer = styled.View`
   height: 100px;
   background-color: #81d8d0;
   margin: 10px;
+`
+
+export const ViewFlatList = styled.View`
+  height: 70%;
 `
 
 export const TextContainer = styled.Text`
@@ -13,16 +18,14 @@ export const TextContainer = styled.Text`
   align-items: center;
 `
 
-export const TextButton = styled.Text`
-  font-size: 20px;
-  background-color: #e6ceac;
-  margin: 30px;
-  text-align: center;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
+export const specialStyles = StyleSheet.create({
+  button: {
+    backgroundColor: "#e6ceac",
+    alignItems: "center",
+    textAlign: "center",
+    margin: 10,
+  },
+})
 
 export const TextInputArea = styled.TextInput`
   font-size: 18px;

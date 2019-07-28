@@ -1,12 +1,12 @@
-import { View } from "react-native"
+import { View, TouchableOpacity } from "react-native"
 import React, { Component } from "react"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { alertMsg } from "../../uitils/helpers"
 import {
-  TextButton,
   TextContainer,
   ViewContainer,
+  specialStyles,
 } from "./sharedStyle/styledComponents"
 
 class DeckView extends Component {
@@ -18,18 +18,22 @@ class DeckView extends Component {
           <TextContainer>{decks.title}</TextContainer>
           <TextContainer>{decks.qss.length} Cards</TextContainer>
         </ViewContainer>
-        <TextButton onPress={() => Actions.addCard({ deckKey })}>
-          Add Card
-        </TextButton>
-        <TextButton
+        <TouchableOpacity
+          onPress={() => Actions.addCard({ deckKey })}
+          style={specialStyles.button}
+        >
+          <TextContainer>Add Card</TextContainer>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             decks.qss.length <= 0
               ? alertMsg("There is no card in this deck yet. ", () => false)
               : Actions.quizView({ deckKey })
           }}
+          style={specialStyles.button}
         >
-          Take Quiz
-        </TextButton>
+          <TextContainer>Take Quiz</TextContainer>
+        </TouchableOpacity>
       </View>
     )
   }

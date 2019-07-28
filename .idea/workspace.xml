@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbca09dd-656a-4818-81ee-a5be52a7e390" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uitils/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/uitils/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
       <updated>1563985831756</updated>
       <workItem from="1563985833495" duration="263000" />
       <workItem from="1564066704589" duration="1981000" />
-      <workItem from="1564324740811" duration="1614000" />
+      <workItem from="1564324740811" duration="1699000" />
     </task>
     <servers />
   </component>

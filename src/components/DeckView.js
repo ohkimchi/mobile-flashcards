@@ -27,7 +27,11 @@ class DeckView extends Component {
         <TouchableOpacity
           onPress={() => {
             decks.qss.length <= 0
-              ? alertMsg("There is no card in this deck yet. ", () => false)
+              ? alertMsg(
+                  "Oh no..",
+                  "There is no card in this deck yet. ",
+                  () => false
+                )
               : Actions.quizView({ deckKey })
           }}
           style={specialStyles.button}

@@ -98,6 +98,7 @@ class QuizView extends Component {
                 switchVal: false,
               })
             }
+            style={specialStyles.button}
           >
             <TextContainer>Correct</TextContainer>
           </TouchableOpacity>
@@ -109,6 +110,7 @@ class QuizView extends Component {
                 switchVal: false,
               })
             }
+            style={specialStyles.button}
           >
             <TextContainer>Incorrect</TextContainer>
           </TouchableOpacity>

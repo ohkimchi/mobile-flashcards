@@ -52,4 +52,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(DecksActions, dispatch)
 }
 
-export default connect(mapDispatchToProps)(NewDeck)
+export default connect(
+  null,
+  mapDispatchToProps
+)(NewDeck)

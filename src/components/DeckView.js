@@ -1,4 +1,4 @@
-import { View, Text } from "react-native"
+import { View } from "react-native"
 import React, { Component } from "react"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"

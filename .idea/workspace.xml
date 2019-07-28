@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbca09dd-656a-4818-81ee-a5be52a7e390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.expo-shared/assets.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DeckView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewDeck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizView.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1061" />
-    <option name="y" value="-962" />
-    <option name="width" value="1400" />
-    <option name="height" value="962" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />

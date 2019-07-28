@@ -43,7 +43,7 @@ class NewDeck extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  bindActionCreators(DeckActions, dispatch)
+  return bindActionCreators(DeckActions, dispatch)
 }
 
 export default connect(mapDispatchToProps)(NewDeck)

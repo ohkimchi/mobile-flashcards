@@ -1,7 +1,7 @@
-import { Switch, Text, View } from "native-base"
+import { Switch } from "native-base"
 import React, { Component } from "react"
 import { Actions } from "react-native-router-flux"
-import TouchableOpacity from "react-native-web/dist/exports/TouchableOpacity"
+import { TouchableOpacity, Text, View } from "react-native"
 import { connect } from "react-redux"
 
 class QuizView extends Component {

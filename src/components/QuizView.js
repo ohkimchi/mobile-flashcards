@@ -4,6 +4,10 @@ import { TouchableOpacity, View } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import {
+  clearLocalNotification,
+  setLocalNotification,
+} from "../../uitils/helpers"
+import {
   specialStyles,
   SwitchContainer,
   TextContainer,
@@ -16,6 +20,10 @@ class QuizView extends Component {
     rightAns: 0,
     wrongAns: 0,
     cardPos: 0,
+  }
+
+  componentDidMount() {
+    clearLocalNotification().then(setLocalNotification)
   }
 
   toggleSwitch = value => {

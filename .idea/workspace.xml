@@ -4,6 +4,7 @@
     <list default="true" id="cbca09dd-656a-4818-81ee-a5be52a7e390" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/QuizView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uitils/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/uitils/helpers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,8 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileColors">
-    <fileColor scope="Local Unit Tests" color="bbff7e" />
-    <fileColor scope="Android Instrumented Tests" color="bbff7e" />
+    <fileColor scope="Local Unit Tests" color="0c3118" />
+    <fileColor scope="Android Instrumented Tests" color="0c3118" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1Oe4TkfmyHQ5BNNDSYiqgssK1i9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -42,7 +44,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunAnythingCache">
@@ -74,6 +76,7 @@
       <updated>1563985831756</updated>
       <workItem from="1563985833495" duration="263000" />
       <workItem from="1564066704589" duration="1981000" />
+      <workItem from="1564324740811" duration="1614000" />
     </task>
     <servers />
   </component>

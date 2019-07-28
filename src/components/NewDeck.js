@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Text, TextInput, TouchableOpacity, View } from "react-native"
+import { TouchableOpacity, View } from "react-native"
 import { Actions } from "react-native-router-flux"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
@@ -18,10 +18,11 @@ class NewDeck extends Component {
 
   onSubmit = () => {
     const { title } = this.state
+    const { addNewDeck } = this.props
     if (title.length < 1) {
       alertMsg("Your deck title cannot be empty", () => false)
     } else {
-      this.props.addNewDeck(this.state.title)
+      addNewDeck(title)
       alertMsg("A new deck is added", () =>
         Actions.deckView({ deckKey: title })
       )
@@ -38,7 +39,7 @@ class NewDeck extends Component {
             value={this.state.title}
             onChangeText={title => this.setState({ title })}
           />
-          <TouchableOpacity onPress={this.onSubmit}>
+          <TouchableOpacity onPress={() => this.onSubmit()}>
             <TextButton>Save Deck</TextButton>
           </TouchableOpacity>
         </View>
